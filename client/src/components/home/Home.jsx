@@ -1,8 +1,9 @@
+import { Link } from "react-router";
+
 export default function Home() {
   return (
     <>
-      
-      <section  className="hero">
+      <section className="hero">
         <div className="hero-content">
           <h1>Timeless Luxury, Modern Precision</h1>
           <p>
@@ -10,7 +11,10 @@ export default function Home() {
             elegance, designed for performance.
           </p>
           <div className="hero-buttons">
-            <button className="primary">Explore Collection</button>
+            <Link to="/catalog" style={{ textDecoration: "none" }}>
+              <button className="primary">Explore Collection</button>
+            </Link>
+            
             <button className="secondary">Learn More</button>
           </div>
         </div>

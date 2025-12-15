@@ -6,9 +6,11 @@ export function Header() {
 
   return (
     <header className="header">
-      <h1 className="logo">⌚ WatchHub</h1>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <h1 className="logo">⌚ WatchHub</h1>
+      </Link>
+
       <nav>
-        <Link to="/">Home</Link>
         {isAuthenticated ? (
           <>
             <div className="welcome-badge">

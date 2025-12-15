@@ -1333,52 +1333,106 @@
         }
     };
     var seedData = {
-        
-        games: {
-           "5c7d8f0e-3a9b-4c2d-9e1f-6a4b3c8d2e7a": {
-            "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            "title": "The Witcher 3",
-            "genre": "Open World",
-            "players": 32000,
-            "date": "2015-05-19",
-            "imageUrl": "/images/witcher.png",
-            "summary": "A story-driven, open world fantasy RPG. Play as Geralt of Rivia, a monster slayer for hire, who must find the Child of Prophecy in a vast, war-torn world. The game is known for its morally gray choices, mature storyline, and expansive world exploration.",
-            "_createdOn": 1617194350000
+      games: {
+        "5c7d8f0e-3a9b-4c2d-9e1f-6a4b3c8d2e7a": {
+          _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+          title: "The Witcher 2",
+          genre: "Open World",
+          players: 32000,
+          date: "2015-05-19",
+          imageUrl: "/images/witcher.png",
+          summary:
+            "A story-driven, open world fantasy RPG. Play as Geralt of Rivia, a monster slayer for hire, who must find the Child of Prophecy in a vast, war-torn world. The game is known for its morally gray choices, mature storyline, and expansive world exploration.",
+          _createdOn: 1617194350000,
         },
         "7b9a2c4f-1d5e-4b6c-8a3d-2f1e0g3h4i5j": {
-            "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-            "title": "Elden Ring",
-            "genre": "Action RPG",
-            "players": 105000,
-            "date": "2022-02-25",
-            "imageUrl": "/images/elden ring.png",
-            "summary": "A monumental fantasy action RPG developed by FromSoftware and Bandai Namco. Set in the Lands Between, players embark on an epic quest to become the Elden Lord, exploring a vast open world designed by Hidetaka Miyazaki, with worldbuilding contributed by fantasy author George R. R. Martin.",
-            "_createdOn": 1645708800000
+          _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
+          title: "Elden Ring",
+          genre: "Action RPG",
+          players: 105000,
+          date: "2022-02-25",
+          imageUrl: "/images/elden ring.png",
+          summary:
+            "A monumental fantasy action RPG developed by FromSoftware and Bandai Namco. Set in the Lands Between, players embark on an epic quest to become the Elden Lord, exploring a vast open world designed by Hidetaka Miyazaki, with worldbuilding contributed by fantasy author George R. R. Martin.",
+          _createdOn: 1645708800000,
         },
         "3d4e5f6g-7h8i-9j0k-1l2m-3n4o5p6q7r8s": {
-            "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-            "title": "Minecraft",
-            "genre": "Sandbox",
-            "players": 1400000,
-            "date": "2011-11-18",
-            "imageUrl": "/images/minecraft.png",
-            "summary": "Minecraft is a sandbox video game where players explore a blocky, procedurally generated 3D world with infinite terrain. Players may discover and extract raw materials, craft tools and items, and build structures, earthworks and simple machines.",
-            "_createdOn": 1617194450000
+          _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+          title: "Minecraft",
+          genre: "Sandbox",
+          players: 1400000,
+          date: "2011-11-18",
+          imageUrl: "/images/minecraft.png",
+          summary:
+            "Minecraft is a sandbox video game where players explore a blocky, procedurally generated 3D world with infinite terrain. Players may discover and extract raw materials, craft tools and items, and build structures, earthworks and simple machines.",
+          _createdOn: 1617194450000,
         },
         "9f8e7d6c-5b4a-3c2d-1e0f-9g8h7i6j5k4l": {
-            "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-            "title": "Cyberpunk 2077",
-            "genre": "Action RPG",
-            "players": 85000,
-            "date": "2020-12-10",
-            "imageUrl": "/images/cyberpunk.png",
-            "summary": "An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.",
-            "_createdOn": 1607558400000
-            }
+          _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
+          title: "Cyberpunk 2077",
+          genre: "Action RPG",
+          players: 85000,
+          date: "2020-12-10",
+          imageUrl: "/images/cyberpunk.png",
+          summary:
+            "An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.",
+          _createdOn: 1607558400000,
         },
-        comments: {
-        
-        }
+      },
+      watches: {
+        "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d": {
+          _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+          title: "Rolex Submariner",
+          genre: "Luxury Diver Watch",
+          price: 1000,
+          date: "2021-04-15",
+          imageUrl:
+            "https://www.besha.bg/assets/img/bespoke/watch/upright_watch_assets_portrait/m126610ln-0001.webp",
+          summary:
+            "The Rolex Submariner is an iconic luxury dive watch known for its durability, precision, and timeless design. It features a water-resistant Oyster case and a unidirectional rotating bezel.",
+          _createdOn: 1618444800000,
+        },
+
+        "6d5c4b3a-2f1e-0d9c-8b7a-6e5f4d3c2b1a": {
+          _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
+          title: "Omega Speedmaster Moonwatch",
+          genre: "Chronograph",
+          price: 1000,
+          date: "2019-07-20",
+          imageUrl:
+            "https://www.giulian.bg/wp-content/uploads/2025/08/310_30_42_50_01_001_1.webp",
+          summary:
+            "The Omega Speedmaster Moonwatch is legendary for being the first watch worn on the Moon. It features a chronograph function and a classic, professional design.",
+          _createdOn: 1563580800000,
+        },
+
+        "9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f": {
+          _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+          title: "Apple Watch Series 9",
+          genre: "Smartwatch",
+          price: 1200,
+          date: "2023-09-22",
+          imageUrl:
+            "https://s13emagst.akamaized.net/products/60442/60441037/images/res_bf7d5946cba96e6c50cf5a1b1a3d58b7.jpg",
+          summary:
+            "Apple Watch Series 9 is a powerful smartwatch offering health tracking, fitness monitoring, and seamless integration with the Apple ecosystem in a sleek modern design.",
+          _createdOn: 1695340800000,
+        },
+
+        "2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b": {
+          _ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
+          title: "Casio G-Shock GA-2100",
+          genre: "Sports Watch",
+          price: 1200,
+          date: "2020-03-10",
+          imageUrl:
+            "https://s13emagst.akamaized.net/products/67843/67842650/images/res_77f0073a90c67e0f610f6542091a3091.jpg",
+          summary:
+            "The Casio G-Shock GA-2100 combines a slim profile with legendary shock resistance. Designed for extreme durability, it’s a favorite for sports and outdoor activities.",
+          _createdOn: 1583798400000,
+        },
+      },
+      comments: {},
     };
     var rules$1 = {
         users: {
