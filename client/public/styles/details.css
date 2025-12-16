@@ -1,0 +1,231 @@
+/* ===== DETAILS PAGE WRAPPER ===== */
+#game-details {
+  padding: 6rem 3rem;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #141420, #050508);
+  color: var(--light);
+}
+
+#game-details > h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+/* ===== MAIN CARD ===== */
+.info-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #151520, #0c0c12);
+  border-radius: 28px;
+  padding: 3.5rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+}
+
+/* ===== HEADER + IMAGE ===== */
+.header-and-image {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* ===== WATCH IMAGE ===== */
+.game-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+/* ===== META INFO ===== */
+.meta-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+}
+
+/* ===== DATA ROWS ===== */
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.95rem;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--muted);
+}
+
+.value {
+  color: var(--light);
+  font-weight: 600;
+}
+
+/* ===== SUMMARY ===== */
+.summary-section {
+  grid-column: 1 / -1;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.summary-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--gold);
+}
+
+.text-summary {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ===== EDIT / DELETE ===== */
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+
+.button {
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(135deg, var(--gold), #f5d76e);
+  color: #000;
+  box-shadow: 0 8px 25px rgba(212,175,55,0.45);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(212,175,55,0.6);
+}
+
+/* ===== COMMENTS ===== */
+.details-comments {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.details-comments h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--gold);
+}
+
+/* ===== COMMENT LIST ===== */
+.details-comments ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.comment {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.comment p {
+  color: var(--light);
+}
+
+.no-comment {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ===== CREATE COMMENT ===== */
+.create-comment {
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.create-comment label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.create-comment textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1rem;
+  color: var(--light);
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.create-comment textarea::placeholder {
+  color: #777;
+}
+
+.create-comment textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.2);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .header-and-image {
+    grid-template-columns: 1fr;
+  }
+
+  .game-img {
+    height: 420px;
+  }
+
+  .info-section {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #game-details {
+    padding: 4rem 1.5rem;
+  }
+
+  #game-details > h1 {
+    font-size: 2.2rem;
+  }
+
+  .game-img {
+    height: 320px;
+  }
+}
