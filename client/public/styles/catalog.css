@@ -1,31 +1,26 @@
-/* Catalog Page Section */
+/* ===== CATALOG PAGE ===== */
 #catalog-page {
   min-height: 100vh;
-  padding: 4rem 2rem;
-background:
-  linear-gradient(to top, #000000 0%, transparent 20%),
-  linear-gradient(to bottom, transparent 80%, #000000 100%),
-  linear-gradient(180deg, #000000 0%, #16213e 70%, #0f172a 100%);
+  padding: 6rem 3rem;
+  background: radial-gradient(circle at top, #141420, #050508);
 }
 
-/* No Articles Message */
+/* ===== EMPTY STATE ===== */
 .no-articles {
   text-align: center;
-  font-size: 2rem;
-  color: #e0e0e0;
-  margin: 4rem 0;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 1.6rem;
+  color: var(--muted);
+  margin-top: 6rem;
+  font-weight: 500;
 }
 
-/* Catalog Container - Grid Layout */
+/* ===== CATALOG GRID ===== */
 .catalog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
   max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5rem;
-  padding: 2rem 0;
 }
 
 /* Individual Watch Card */

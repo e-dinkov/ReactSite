@@ -15,7 +15,9 @@ export default function Home() {
               <button className="primary">Explore Collection</button>
             </Link>
             
-            <button className="secondary">Learn More</button>
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <button className="secondary">Learn More</button>
+            </Link>
           </div>
         </div>
       </section>

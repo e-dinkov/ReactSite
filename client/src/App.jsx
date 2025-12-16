@@ -13,6 +13,9 @@ import { Header } from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Catalog from "./components/catalog/Catalog";
 import Details from "./components/details/Details";
+import WatchCreate from "./components/create/Create";
+import EditWatch from "./components/edit/Edit";
+import About from "./components/about/About";
 
 
 
@@ -32,6 +35,9 @@ function App() {
           path="/watches/:gameId/details"
           element={<Details user={user} />}
         />
+        <Route path="/watches/:gameId/edit" element={<EditWatch />} />
+        <Route path="/create" element={<WatchCreate />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </>

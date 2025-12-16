@@ -11,6 +11,7 @@ export default function Details() {
   const navigate = useNavigate();
   const { user, isAuthenticated } = useUserContext();
   const { data: game, request } = useRequest(`/data/watches/${gameId}`, {});
+  console.log(game);
 
   const urlParams = new URLSearchParams({
     where: `gameId="${gameId}"`,
@@ -21,6 +22,8 @@ export default function Details() {
     `/data/comments?${urlParams.toString()}`,
     []
   );
+  
+  
   // TODO Fix bug with additional re-renders
   const [optimisticComments, dispatchOptimisticComments] = useOptimistic(
     comments,
@@ -46,7 +49,7 @@ export default function Details() {
     try {
       await request(`/data/watches/${gameId}`, "DELETE");
 
-      navigate("/games");
+      navigate("/catalog");
     } catch (err) {
       alert("Unable to delete game: ", err.message);
     }
@@ -98,14 +101,18 @@ export default function Details() {
         </div>
 
         {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
-        <div className="buttons">
-          <Link to={`/games/${gameId}/edit`} className="button">
-            Edit
-          </Link>
-          <button className="button" onClick={deleteGameHandler}>
-            Delete
-          </button>
-        </div>
+        {game._ownerId === user?._id && (
+          <div className="buttons">
+            <Link to={`/watches/${gameId}/edit`} className="button">
+              Edit
+            </Link>
+            <button className="button" onClick={deleteGameHandler}>
+              Delete
+            </button>
+          </div>
+        )}
+
+        
 
         <DetailsComments comments={optimisticComments} />
       </div>

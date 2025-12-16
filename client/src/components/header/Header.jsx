@@ -12,7 +12,7 @@ export function Header() {
 
       <nav>
         {isAuthenticated ? (
-          <>
+          <><Link to="/create">Create Watch</Link>
             <div className="welcome-badge">
               <svg
                 className="welcome-icon"
@@ -29,7 +29,9 @@ export function Header() {
               <span className="welcome-text">Welcome, {user.email}</span>
               <span className="welcome-pulse"></span>
             </div>
+            
             <button onClick={logoutHandler}>Logout</button>
+            
           </>
         ) : (
           <>
