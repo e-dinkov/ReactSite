@@ -128,15 +128,12 @@ Password: 123456
 Follow these steps to run the project locally:
 
 ### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/watchhub.git
-cd watchhub
-```
 
 ### 2️⃣ Install dependencies
 ```bash
 npm install
 ```
+
 
 ### 3️⃣ Run the application
 ```bash
@@ -147,7 +144,11 @@ The app will be available at:
 ```
 🌐 http://localhost:5173
 ```
+### 4️⃣ Start backend server
 
+```
+Write in the server folder terminal 'node server' to start it!
+```
 ---
 
 ## 📸 Screenshots
