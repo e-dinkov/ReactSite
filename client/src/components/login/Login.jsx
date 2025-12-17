@@ -1,25 +1,26 @@
 import { useNavigate } from "react-router";
 import useForm from "../../hooks/useForm";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import UserContext from "../../contexts/UserContext";
 
 export default function Login() {
   const navigate = useNavigate();
   const { loginHandler } = useContext(UserContext);
+  const [error, setError] = useState("");
 
   const submitHandler = async ({ email, password }) => {
+    setError("");
+
     if (!email || !password) {
-      return alert("Email and password are required!");
+      setError("Email and password are required.");
+      return;
     }
 
     try {
       await loginHandler(email, password);
-    
-
       navigate("/");
     } catch (err) {
-      // toast(`Cannot login`, { type: 'error' });
-      toast.error(`Cannot login`);
+      setError("Invalid email or password.");
     }
   };
 
@@ -33,21 +34,28 @@ export default function Login() {
       <form id="login" action={formAction}>
         <div className="container">
           <h1>Login</h1>
+
+          {error && <p className="form-error">{error}</p>}
+
           <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             {...register("email")}
             placeholder="Your Email"
+            className={error ? "input-error" : ""}
           />
 
-          <label htmlFor="login-pass">Password</label>
+          <label htmlFor="login-password">Password</label>
           <input
             type="password"
             id="login-password"
             {...register("password")}
             placeholder="Password"
+            minLength="6"
+            className={error ? "input-error" : ""}
           />
+
           <input type="submit" className="btn submit" value="Login" />
         </div>
       </form>

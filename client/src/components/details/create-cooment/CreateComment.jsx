@@ -38,6 +38,7 @@ export default function CreateComment({ user, onCreateEnd, onCreateStart }) {
         <textarea
           {...register("comment")}
           placeholder="Comment......"
+          minLength="5"
         ></textarea>
         <input
           className="btn submit"

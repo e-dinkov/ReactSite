@@ -1,0 +1,29 @@
+/* Error message */
+.form-error {
+  background: rgba(255, 59, 59, 0.1);
+  border: 1px solid rgba(255, 59, 59, 0.4);
+  color: #ff4d4d;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Input error state */
+.input-error {
+  border-color: #ff4d4d !important;
+  box-shadow: 0 0 0 1px rgba(255, 77, 77, 0.3);
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

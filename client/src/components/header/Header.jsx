@@ -9,10 +9,14 @@ export function Header() {
       <Link to="/" style={{ textDecoration: "none" }}>
         <h1 className="logo">⌚ WatchHub</h1>
       </Link>
+      
 
-      <nav>
+      <nav><Link to="/catalog" style={{ textDecoration: "none" }}>
+        Catalog
+      </Link>
         {isAuthenticated ? (
-          <><Link to="/create">Create Watch</Link>
+          <>
+            <Link to="/create">Create Watch</Link>
             <div className="welcome-badge">
               <svg
                 className="welcome-icon"
@@ -29,9 +33,8 @@ export function Header() {
               <span className="welcome-text">Welcome, {user.email}</span>
               <span className="welcome-pulse"></span>
             </div>
-            
+
             <button onClick={logoutHandler}>Logout</button>
-            
           </>
         ) : (
           <>
