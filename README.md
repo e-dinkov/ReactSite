@@ -7,7 +7,6 @@
 
 ## 🚀 Live Demo
 🔗 _Coming soon_  
-`https://watchhub.vercel.app`
 
 ---
 

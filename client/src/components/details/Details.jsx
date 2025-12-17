@@ -39,7 +39,7 @@ export default function Details() {
 
   const deleteGameHandler = async () => {
     const isConfirmed = confirm(
-      `Are you sure you want to delete game: ${game.title}`
+      `Are you sure you want to delete game: ${game?.title}`
     );
 
     if (!isConfirmed) {
@@ -74,34 +74,34 @@ export default function Details() {
       <h1>Game Details</h1>
       <div className="info-section">
         <div className="header-and-image">
-          <img className="game-img" src={game.imageUrl} alt={game.title} />
+          <img className="game-img" src={game?.imageUrl} alt={game?.title} />
 
           <div className="meta-info">
-            <h1 className="game-name">{game.title}</h1>
+            <h1 className="game-name">{game?.title}</h1>
 
             <p className="data-row">
               <span className="label">Genre:</span>
-              <span className="value">{game.genre}</span>
+              <span className="value">{game?.genre}</span>
             </p>
 
             <p className="data-row">
               <span className="label">Active Players:</span>
-              <span className="value">{game.price}</span>
+              <span className="value">{game?.price}</span>
             </p>
 
             <p className="data-row">
               <span className="label">Release Date:</span>
-              <span className="value">{game.date}</span>
+              <span className="value">{game?.date}</span>
             </p>
           </div>
           <div className="summary-section">
             <h2>Summary:</h2>
-            <p className="text-summary">{game.summary}</p>
+            <p className="text-summary">{game?.summary}</p>
           </div>
         </div>
 
         {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
-        {game._ownerId === user?._id && (
+        {game?._ownerId === user?._id && (
           <div className="buttons">
             <Link to={`/watches/${gameId}/edit`} className="button">
               Edit
