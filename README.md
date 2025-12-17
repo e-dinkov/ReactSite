@@ -99,6 +99,7 @@ watchhub/
 │   └── main.jsx
 └── README.md
 ---
+```
 
 ## 🔒 Route Protection
 
@@ -120,7 +121,9 @@ Use the following test account to explore the application:
 ```text
 Email: test@watchhub.com
 Password: 123456
+```
 ## ⚙️ Installation & Setup
+
 
 Follow these steps to run the project locally:
 
